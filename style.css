@@ -402,7 +402,7 @@ canvas {
 /* Fuente elegante y cursiva */
 .titulo-grande {
     font-family: 'Caveat', cursive;
-    font-size: 70px; /* Tamaño grande */
+    font-size: 50px; /* Tamaño grande */
     color: #d81b60;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
@@ -415,7 +415,7 @@ canvas {
 
 .mensaje-maquina {
     font-family: 'Caveat', cursive;
-    font-size: 50px; /* Tamaño menor al título */
+    font-size: 30px; /* Tamaño menor al título */
     color: #d81b60;
     margin-top: 20px;
     /* Mantenemos el efecto de máquina de escribir */

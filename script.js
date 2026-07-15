@@ -56,7 +56,7 @@ botonAbrir.addEventListener('click', () => {
         const contenedorCordon = document.getElementById('contenedor-cordon');
         contenedorCordon.classList.remove('oculto');
         contenedorCordon.classList.add('visible');
-    }, 28000); 
+    }, 36000); 
 });
 
 // --- BLOQUE FUERA DEL CLICK ---
