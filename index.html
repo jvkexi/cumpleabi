@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="escena1" class="pantalla">
+        <div class="carta-cerrada">
+            <h1>Tienes una cartaaa... 💌</h1>
+            <button id="btn-abrir" class="ocultar-boton">Abrir</button>
+        </div>
+    </div>
+
+    <div id="escena-animacion" class="pantalla oculto">
+        
+        <div class="contenedor-sobre" id="el-sobre">
+            <div class="sobre-atras"></div>
+            
+            <div class="carta-3d" id="la-carta">
+                
+                <div class="pagina-izquierda">
+                    <h2 class="titulo-carta">FELIZ CUMPLEAÑOS ABI</h2>
+                    <p>Deseo que hoy sea un día tan bonito y especial como tú. Espero que te la pases increíble y que hoy sea el inicio de un año espectacular para ti.</p>
+                    <p>Att: Jake</p>
+                </div>
+
+                <div class="pagina-derecha">
+                    
+                    <div class="cara-frontal">
+                        <h2 class="texto-portada">Para ti Abi 🤍</h2>
+                    </div>
+
+                    <div class="cara-trasera">
+                        <div class="marco-video">
+                            <span class="emoji e1">🎈</span>
+                            <span class="emoji e2">🎂</span>
+                            <span class="emoji e3">🎉</span>
+                            <span class="emoji e4">🎁</span>
+                            <video id="video-recuerdos" loop muted playsinline>
+                                <source src="tu-video.mp4" type="video/mp4">
+                                Tu navegador no soporta video.
+                            </video>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="sobre-frente"></div>
+            <div class="sobre-solapa" id="solapa">
+                <div class="corazon-sello">❤️</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+ <audio id="musica-fondo" loop>
+    <source src="tu-cancion.mp3" type="audio/mpeg">
+</audio> 
+
+<div id="contenedor-cordon" class="oculto derecha">
+        <div class="hilo"></div>
+        <div class="tirador">¡Tocame!</div>
+    </div>
+
+<div id="escena-pastel" class="oculto">
+    <h1 class="titulo-grande"><p>¡Feliz Cumpleaños Abibonita!</p></h1>
+
+    <div class="pastel-container">
+        <div class="vela">
+            <div class="flama"></div>
+        </div>
+        
+        <div class="nivel nivel-4"></div>
+        <div class="nivel nivel-3"></div>
+        <div class="nivel nivel-2"></div>
+        <div class="nivel nivel-1"></div>
+    </div>
+    <h2 class="mensaje-maquina" id="mensaje-final"><p>Te quiero mucho ❤️❤️</p></h2>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
