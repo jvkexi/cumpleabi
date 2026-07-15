@@ -116,7 +116,7 @@ h1 { color: #d6336c; margin-bottom: 20px; }
 }
 
 .titulo-carta { font-family: 'Caveat', cursive; font-size: 28px; color: #d6336c; text-align: center; margin-bottom: 20px; line-height: 1.2; }
-.pagina-izquierda p { font-family: 'Caveat', cursive; font-size: 20px; color: #333; margin-bottom: 10px; }
+.pagina-izquierda p { font-family: 'Caveat', cursive; font-size: 180px; color: #333; margin-bottom: 10px; }
 
 /* LA PÁGINA DERECHA (La que se dobla) */
 .pagina-derecha {
