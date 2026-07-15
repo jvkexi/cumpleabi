@@ -98,12 +98,18 @@ h1 { color: #d6336c; margin-bottom: 20px; }
 
 /* DISEÑO DE LAS PÁGINAS */
 .pagina-izquierda {
-    width: 50%; height: 100%;
+    width: 100%; /* Ocupará todo el ancho en móviles */
+    height: auto; /* Se ajustará al contenido */
+    min-height: 400px;
     background-color: #fdfdfd;
-    border-radius: 15px 0 0 15px; padding: 40px 40px 40px 60px;
-    box-shadow: -5px 10px 20px rgba(0,0,0,0.15);
+    border-radius: 15px; /* Bordes redondeados en todo el contorno */
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     background-image: repeating-linear-gradient(transparent, transparent 30px, #e0e0e0 30px, #e0e0e0 31px);
-    line-height: 31px; position: relative;
+    line-height: 31px;
+    position: relative;
+    word-wrap: break-word;
+    overflow-y: auto;
 }
 .pagina-izquierda::before {
     content: ''; position: absolute; top:0; left:15px; bottom:0; width:20px;
@@ -425,3 +431,41 @@ canvas {
     animation: typing 3s steps(30, end);
 }
 
+
+/* --- AJUSTES PARA QUE NADA SE SALGA EN CELULARES --- */
+@media (max-width: 600px) {
+    /* Reduce los títulos para que quepan en una línea */
+    .titulo-grande { font-size: 8vw !important; }
+    .mensaje-maquina { font-size: 5vw !important; }
+    
+    /* La carta se ajusta al ancho del celular */
+    .carta-3d { 
+        width: 90vw !important; 
+        height: 60vh !important; 
+    }
+    
+    /* Ajusta el texto dentro de la carta para que no se corte */
+    .titulo-carta { font-size: 7vw !important; }
+    .pagina-izquierda p { font-size: 5vw !important; }
+    
+    /* Asegura que el contenedor del pastel no se estire de más */
+    .pastel-container { transform: scale(0.8); }
+}
+
+@media (max-width: 600px) {
+    .carta-3d {
+        flex-direction: column; /* Pone una página sobre otra */
+        width: 95vw !important;
+        height: auto !important;
+        transform: scale(0.9) !important;
+    }
+
+    .pagina-izquierda, .pagina-derecha {
+        width: 100% !important;
+        border-radius: 15px !important;
+        margin-bottom: 20px;
+    }
+
+    /* Ocultamos el doblez central que ya no tiene sentido en vertical */
+    .pagina-izquierda::after { display: none; }
+}
